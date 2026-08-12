@@ -1,0 +1,122 @@
+
+	-------------------------------------------- SUMMARY -----------------------------------------------
+	------------- Fuselage [Kg] -------------------------
+	
+	Ideal structural mass  6547.81
+	Total structure mass   12357.03
+	
+	------------- Semi-wingbox [Kg] ---------------------
+	
+	Bending material mass  2059.47
+	Shear material mass    563.95
+	Torsion material mass    1375.64
+	Predicted wingbox mass 2623.42
+	Actual wingbox mass    2623.42
+	
+	------------- Wing Carrythrough [Kg] ----------------
+	
+	Bending material mass   725.07
+	Shear material mass      19.08
+	Torsion material mass   266.31
+	CarryThrough mass       744.15
+	Final CarryThrough mass 1000.28
+	
+	------------- Wing [Kg] -----------------------------
+	
+	Ideal structural mass         5246.84
+	Structural mass               5164.46
+	Primary structure mass        7052.80
+	Total structure mass          9114.81
+	Total structure including CT  10115.09
+	
+	------------- Canard [Kg] ---------------------------
+	
+	Ideal structural mass             1372.14
+	Structural mass                   1350.60
+	Primary structure mass            1844.44
+	Total structure mass              2383.69
+	Total structure mass including CT 2600.00
+	
+	------------- Vertical tail [Kg] --------------------
+	
+	Ideal structural mass             453.06
+	Structural mass                   445.94
+	Primary structure mass            609.00
+	Total structure mass              787.05
+	Total structure mass including CT 787.05
+	
+	------------- Horizontal tail [Kg] ------------------
+	
+	Ideal structural mass              568.15
+	Structural mass                    559.23
+	Primary structure mass             763.70
+	Total structure mass               986.98
+	Total structure mass including  CT 1129.61
+	
+	------------- Item Masses [Kg] ---------------------
+	
+	Fuselage                           12357.03
+	Wing                               10115.09
+	Horizontal tail                    1129.61
+	Vertical tail                      787.05
+	Canard                             2600.00
+	Interior                           3600.00
+	Systems                            5014.00
+	Nose landing gear                  371.00
+	Main landing gear                  1669.00
+	Engines1                           6568.00
+	Engines2                             0.00
+	Pilots                             170.00
+	Crew                               300.00
+
+	Passengers                         25000.00
+	Baggage                              0.00
+	Central tank                       7500.00
+	Wing tank                          8500.00
+	Fuel wing span fraction from 8.1666 to 70 %
+	Aux. tank                            0.00
+
+	------------- Item CG [m] from nose -----------------
+	
+	Fuselage                            22.33
+	Wing                                20.86
+	Horizontal tail                     42.65
+	Vertical tail                       39.01
+	Canard                              22.91
+	Interior                            20.75
+	Systems                             15.45
+	Nose landing gear                    5.07
+	Main landing gear                   21.43
+	Engines1                            16.65
+	Engines2                             0.00
+	Pilots                               3.40
+	Crew                                17.60
+
+	Wing tank                           20.19
+	Central tank                        17.49
+	Aux. tank                            0.00
+	Passengers                          20.75
+	Baggage                              0.00
+
+	------------- Aircraft Weights [Kg] -----------------
+	
+	Operative Empty Weight  (OEW)  44600.80
+	Max Zero Fuel Weight    (MZFW) 69600.80
+	Maximum Take Off Weight (MTOW) 85600.80
+	
+	------------- Aircraft Balance [m] from nose --------
+	
+	Longitudinal Operative Empty Weight  CG  21.04
+	Longitudinal Max Zero Fuel Weight    CG  20.94
+	Longitudinal Maximum Take Off Weight CG  20.56
+	
+	------------- Aircraft MAC [m] ----------------------
+	
+	Wing mean aerodynamic chord MAC    2.63
+	Wing mean aerodynamic chord apex  18.72
+	
+	------------- Aircraft Balance wrt MAC --------------
+	
+	Longitudinal Operative Empty Weight  CG at MAC  88.19%
+	Longitudinal Max Zero Fuel Weight    CG at MAC  84.21%
+	Longitudinal Maximum Take Off Weight CG at MAC  69.88%

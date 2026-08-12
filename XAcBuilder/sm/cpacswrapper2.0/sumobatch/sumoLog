@@ -1,0 +1,5 @@
+Run Sumo with following options: outputFile = cgns, tetgen options = pq1.400Ya160.000, test201211221158.smx
+Using 8 threads. 
+Batch mode active, writing log to 'test201211221158_sumolog.txt' 
+Wait...
+Movefile: C:\Users\pfei_ti\Desktop\cpacsWapperPlusSumo\workespace\test\CFD\Input\test.cgns

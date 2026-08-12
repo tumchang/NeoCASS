@@ -1,0 +1,174 @@
+
+FLIGHT CONDITION
+
+ Speed:    256.745 [m/s].
+ Mach:     0.82 [-].
+ Density:  0.602686 [kg/m^3].
+ Altitude: 6806 [m].
+
+ATTITUDE
+
+ X acc:      UNKNOWN.
+ Y acc:      0 [m/s^2].
+ Z acc:      -9.81 [m/s^2].
+ P-DOT:      0 [rad/s^2].
+ Q-DOT:      0 [rad/s^2].
+ R-DOT:      0 [rad/s^2].
+ Alpha:      UNKNOWN.
+ Sideslip:   0 [deg].
+ Roll rate:  0 [-] (p*BREF/(2VREF)).
+ Pitch rate: 0 [-] (q*CREF/(2VREF)).
+ Yaw rate:   0 [-] (r*BREF/(2VREF)).
+
+TRIM PROBLEM
+
+ Number of unknowns:          3.
+ Number of equations allowed: 3.
+ Method: linear system solution.
+
+REFERENCE VALUES
+
+ Reference chord:   2.57907 [m].
+ Reference span:    49.538 [m].
+ Reference surface: 122.69 [m^2].
+ Reference point for moments: 19.5844,0,0 [m].
+ Reference point for rates and stability: 19.5844,0,0 [m].
+
+MASTER CONTROLS
+
+ aileronr: 0 [deg].
+ elev1r: UNKNOWN.
+ rudder1: 0 [deg].
+
+RIGID TRIM RESULTS
+
+ - X acc:      -1.0052e-09 [m/s^2].
+ - Y acc:      0 [m/s^2].
+ - Z acc:      -9.81 [m/s^2].
+ - P-DOT:      0 [rad/s^2].
+ - Q-DOT:      0 [rad/s^2].
+ - R-DOT:      0 [rad/s^2].
+
+ - Alpha:      -6.09155 [deg].
+ - Sideslip:   0 [deg].
+ - Roll rate:  0 [-] (p*BREF/(2VREF)).
+ - Pitch rate: 0 [-] (q*CREF/(2VREF)).
+ - Yaw rate:   0 [-] (r*BREF/(2VREF)).
+ - Control aileronr:   0 [deg].
+ - Control elev1r:   10.8992 [deg].
+ - Control rudder1:   0 [deg].
+
+ Reference intercepts
+
+ - Cy0: 1.7777e-08.
+ - Cz0: 0.667874.
+ - Cl0: -1.30843e-08.
+ - Cm0: -0.050741.
+ - Cn0: 2.84889e-09.
+
+ Reference hinge intercepts
+
+ - aileronr: 1.58655e-12.
+ - elev1r: 0.000163723.
+ - rudder1: 7.83494e-10.
+
+AERODYNAMIC DERIVATIVES
+
+ALPHA
+
+ NAME                RIGID               
+ Cy/alpha            -0.00000            
+ Cz/alpha            10.70018            
+ Cl/alpha            0.00000             
+ Cm/alpha            -10.74477           
+ Cn/alpha            -0.00000            
+
+BETA
+
+ NAME                RIGID               
+ Cy/beta             0.46737             
+ Cz/beta             -0.01205            
+ Cl/beta             -0.11740            
+ Cm/beta             -0.00497            
+ Cn/beta             0.15113             
+
+ROLL RATE
+
+ NAME                RIGID               
+ Cy/p                -0.08334            
+ Cz/p                0.00014             
+ Cl/p                -0.91663            
+ Cm/p                -0.00014            
+ Cn/p                -0.00643            
+
+PITCH RATE
+
+ NAME                RIGID               
+ Cy/q                -0.00001            
+ Cz/q                39.25211            
+ Cl/q                0.00001             
+ Cm/q                -199.16241          
+ Cn/q                -0.00000            
+
+YAW RATE
+
+ NAME                RIGID               
+ Cy/r                -0.31957            
+ Cz/r                0.00032             
+ Cl/r                0.18894             
+ Cm/r                -0.00108            
+ Cn/r                -0.13367            
+
+aileronr
+
+ NAME                RIGID               
+ Cy/Delta            0.02663             
+ Cz/Delta            -0.00000            
+ Cl/Delta            0.20779             
+ Cm/Delta            0.00001             
+ Cn/Delta            0.00325             
+ Ch/alpha            -0.00000            
+ Ch/beta             0.00009             
+ Ch/p                0.00186             
+ Ch/q                -0.00000            
+ Ch/r                -0.00087            
+ Ch/Delta            -0.00497            
+
+elev1r
+
+ NAME                RIGID               
+ Cy/Delta            -0.00000            
+ Cz/Delta            0.66758             
+ Cl/Delta            0.00000             
+ Cm/Delta            -5.95396            
+ Cn/Delta            -0.00000            
+ Ch/alpha            -0.00568            
+ Ch/beta             -0.00001            
+ Ch/p                -0.00000            
+ Ch/q                -0.16483            
+ Ch/r                -0.00000            
+ Ch/Delta            -0.01608            
+
+rudder1
+
+ NAME                RIGID               
+ Cy/Delta            -0.25521            
+ Cz/Delta            -0.00059            
+ Cl/Delta            0.02778             
+ Cm/Delta            0.00515             
+ Cn/Delta            -0.10952            
+ Ch/alpha            -0.00000            
+ Ch/beta             0.00541             
+ Ch/p                0.00028             
+ Ch/q                -0.00000            
+ Ch/r                -0.00702            
+ Ch/Delta            -0.01830            
+
+STABILITY
+
+ NAME                                     RIGID
+ Center of gravity            XG/CREF    7.47401             
+ Neutral point at fixed stick XN/CREF    8.24342             
+ Control point at fixed stick XC/CREF    16.51230            
+ Static margin          (XN-XCG)/CREF    0.76940             
+ Static margin index (XN-XCG)/(XC-XN)    0.09305             

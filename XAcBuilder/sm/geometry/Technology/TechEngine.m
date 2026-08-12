@@ -1,0 +1,74 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TechEngine
+% Dedicated fuselage Tech menu function 
+% Function works depending TechMode chosen.
+%
+%   INPUT 
+%        engID ->  engine ID #    
+%           ac ->  CPACS struct
+%     
+%   OUTPUT 
+%          TechGeoModel.iEngine
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MODIFICATIONS:
+%     DATE        VERS    PROGRAMMER       DESCRIPTION
+%     10.03.1     1.0     F.Dinardo        Creation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+function TechEngine(engID,TechMode,ac)
+global handles TechGeoModel  
+global pID sID sprID belID abID iSpline iSurf 
+rad=pi/180;
+     engineModel=ac.vehicles{1}.aircraft{1}.model{1}.engines{1}.engine{engID};
+     
+     engineUID  =engineModel.engineUID{1}.ATTRIBUTE.uID
+     transform  =engineModel.engineUID{1}.transformation{1};
+     
+% if TechMode==1 || TechMode==30
+%     ac=varargin{1};
+    try
+        symmetry=engineModel.ATTRIBUTE.symmetry;
+        Mirror=2;
+    catch
+        symmetry=0;
+        Mirror=1;
+    end
+    symmetry
+    
+    
+    ac.vehicles{1}.engines{1}.engine{1}.ATTRIBUTE.uID
+    j=1;
+    while strcmp(engineUID,ac.vehicles{1}.engines{1}.engine{j}.ATTRIBUTE.uID)==0
+        j=j+1;
+    end
+    engine=ac.vehicles{1}.engines{1}.engine{j};
+    
+    %max thrust
+    TechGeoModel.iEng{engID}.dryMass   =str2num(engine.global{1}.dryMass{1}.CONTENT);
+    
+    TechGeoModel.iEng{engID}.Tmax      =str2num(engine.global{1}.thrust00{1}.CONTENT);
+    
+    TechGeoModel.iEng{engID}.dFan      =str2num(engine.global{1}.dFan{1}.CONTENT);
+    
+    TechGeoModel.iEng{engID}.FPR       =str2num(engine.global{1}.fpr00{1}.CONTENT);
+    TechGeoModel.iEng{engID}.BPR       =str2num(engine.global{1}.bpr00{1}.CONTENT);
+    TechGeoModel.iEng{engID}.OPR       =str2num(engine.global{1}.opr00{1}.CONTENT);
+    
+    TechGeoModel.iEng{engID}.X(1)      =str2num(engineModel.transformation{1}.translation{1}.x{1}.CONTENT);
+    TechGeoModel.iEng{engID}.X(2)      =str2num(engineModel.transformation{1}.translation{1}.y{1}.CONTENT);
+    TechGeoModel.iEng{engID}.X(3)      =str2num(engineModel.transformation{1}.translation{1}.z{1}.CONTENT);
+    
+    TechGeoModel.iEng{engID}.coGXloc(1)=str2num(engine.global{1}.coG{1}.x{1}.CONTENT);
+    TechGeoModel.iEng{engID}.coGXloc(2)=str2num(engine.global{1}.coG{1}.y{1}.CONTENT);
+    TechGeoModel.iEng{engID}.coGXloc(3)=str2num(engine.global{1}.coG{1}.z{1}.CONTENT);
+    
+    
+    
+    
+    %nacelle
+    ac.vehicles{1}.engines{1}.engine{2}.nacelle{1}.inlet{1}.position{1}.x{1}.CONTENT
+    ac.vehicles{1}.engines{1}.engine{2}.nacelle{1}.endPos{1}.x{1}.CONTENT
+
+
+
+

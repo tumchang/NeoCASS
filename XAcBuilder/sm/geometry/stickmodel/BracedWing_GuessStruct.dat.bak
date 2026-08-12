@@ -1,0 +1,8 @@
+INCLUDE 'Guess_Struct_fus1.dat'
+INCLUDE 'Guess_Struct_fus2.dat'
+INCLUDE 'Guess_Struct_fus3.dat'
+INCLUDE 'Guess_Struct_wing1.dat'
+INCLUDE 'Guess_Struct_wing2.dat'
+INCLUDE 'Guess_Struct_wing3.dat'   
+INCLUDE 'Guess_Struct_wing4.dat' 
+INCLUDE 'Guess_joints.dat'

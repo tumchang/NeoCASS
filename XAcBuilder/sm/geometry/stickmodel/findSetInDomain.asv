@@ -1,0 +1,62 @@
+function setIDs=findSetInDomain(wingID,ABoxSect,GRIDids)
+global Guess
+% close all, clear all, clc
+% load GRID_wing.mat
+% load SET_gridInterface.mat,
+
+
+
+% 
+% str='..\Technology\D150_Wing1.mat';
+% %str='..\Technology\D150_BoxWing_Wing1.mat';
+% load(str)
+
+% Xbox=TechGeoModel.iWing{1}.aeroPanel.SectWing{3}.X;
+GRID=Guess.iWing{wingID}.GRID;
+Xbox=ABoxSect.X;
+toll=1e-4;
+h=1;
+for Gid=Guess.iWing{wingID}.GID2gridIDs(GRIDids)    
+%     if GRID(Gid).Xi(1)>=min(Xbox(:,1))-toll && GRID(Gid).Xi(1)<=max(Xbox(:,1))+toll
+%         if GRID(Gid).Xi(2)>=min(Xbox(:,2))-toll && GRID(Gid).Xi(2)<=max(Xbox(:,2))+toll
+%             if GRID(Gid).Xi(3)>=min(Xbox(:,3))-toll && GRID(Gid).Xi(3)<=max(Xbox(:,3))+toll
+%                 Gid_inD(h)=Guess.GRID(Gid).ID
+%                 h=h+1;
+%             else
+%             end                
+%         else
+%         end
+%     else   
+%     end
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    flag=[0 0 0];
+    if abs(Xbox(4,2)-Xbox(1,2))>abs(Xbox(4,3)-Xbox(1,3))
+        dir=2;
+    else
+        dir=3;
+    end
+    p =GRID(Gid).Xi(dir);
+    x1=Xbox(1,dir); x2=Xbox(2,dir); x3=Xbox(3,dir); x4=Xbox(4,dir);
+    v=(p-x1)/(x4-x1);
+
+    px=GRID(Gid).Xi(1);
+    u=(px-Xbox(4,1)*v)/(Xbox(2,1)*(1-v)+Xbox(3,1)*v+Xbox(4,1)*v);
+    
+    if v>=0 && v<=1 && u>=0 && u<=1
+        Gid_inD(h)=Guess.iWing{wingID}.GRID(Gid).ID;
+        h=h+1;
+    end
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+end
+
+
+setIDs=Gid_inD;
+
+figure, hold on,axis equal
+plot3(Xbox(:,1),Xbox(:,2),Xbox(:,3))
+for Gid=Guess.iWing{wingID}.GID2gridIDs(GRIDids)
+    plot3(GRID(Gid).Xi(1),GRID(Gid).Xi(2),GRID(Gid).Xi(3),'ob')
+end
+for Gid=Guess.iWing{wingID}.GID2gridIDs(Gid_inD)
+    plot3(GRID(Gid).Xi(1),GRID(Gid).Xi(2),GRID(Gid).Xi(3),'or','MarkerFaceColor','r')
+end
