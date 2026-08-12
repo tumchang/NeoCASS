@@ -734,7 +734,7 @@
         <win2r idx="1" size="1 1" type="double">1</win2r>
         <vert idx="1" size="1 1" type="double">1</vert>
         <horr idx="1" size="1 1" type="double">1</horr>
-        <canr idx="1" size="1 1" type="double">0</canr>
+        <canr idx="1" size="1 1" type="double">1</canr>
         <symmXZ idx="1" size="1 1" type="double">1</symmXZ>
       </beam_model>
       <vlm_calculation idx="1" size="1 1" type="struct">

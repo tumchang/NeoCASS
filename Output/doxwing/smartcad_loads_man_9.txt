@@ -10,12 +10,12 @@ ATTITUDE
 
  X acc:      UNKNOWN.
  Y acc:      0 [m/s^2].
- Z acc:      16.35 [m/s^2].
+ Z acc:      9.81 [m/s^2].
  P-DOT:      0 [rad/s^2].
  Q-DOT:      0 [rad/s^2].
  R-DOT:      0 [rad/s^2].
  Alpha:      UNKNOWN.
- Sideslip:   0 [deg].
+ Sideslip:   22.5 [deg].
  Roll rate:  0 [-] (p*BREF/(2VREF)).
  Pitch rate: 0 [-] (q*CREF/(2VREF)).
  Yaw rate:   0 [-] (r*BREF/(2VREF)).
@@ -36,35 +36,35 @@ REFERENCE VALUES
 
 MASTER CONTROLS
 
- aileronr: -20 [deg].
+ aileronr: 0 [deg].
  elev1r: UNKNOWN.
- rudder1: 0 [deg].
+ rudder1: 30 [deg].
 
 RIGID TRIM RESULTS
 
- - X acc:      -2.10988e-10 [m/s^2].
+ - X acc:      -1.41296e-10 [m/s^2].
  - Y acc:      0 [m/s^2].
- - Z acc:      16.35 [m/s^2].
+ - Z acc:      9.81 [m/s^2].
  - P-DOT:      0 [rad/s^2].
  - Q-DOT:      0 [rad/s^2].
  - R-DOT:      0 [rad/s^2].
 
- - Alpha:      1.34505 [deg].
- - Sideslip:   0 [deg].
+ - Alpha:      -0.42213 [deg].
+ - Sideslip:   22.5 [deg].
  - Roll rate:  0 [-] (p*BREF/(2VREF)).
  - Pitch rate: 0 [-] (q*CREF/(2VREF)).
  - Yaw rate:   0 [-] (r*BREF/(2VREF)).
- - Control aileronr:   -20 [deg].
- - Control elev1r:   5.06005 [deg].
- - Control rudder1:   0 [deg].
+ - Control aileronr:   0 [deg].
+ - Control elev1r:   4.60499 [deg].
+ - Control rudder1:   30 [deg].
 
  Reference intercepts
 
- - Cy0: 5.81972e-09.
+ - Cy0: 5.79927e-09.
  - Cz0: 0.587509.
- - Cl0: -2.4402e-09.
+ - Cl0: -2.29473e-09.
  - Cm0: 0.875819.
- - Cn0: 2.34208e-09.
+ - Cn0: 2.34296e-09.
 
  Reference hinge intercepts
 

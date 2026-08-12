@@ -42,29 +42,29 @@ MASTER CONTROLS
 
 RIGID TRIM RESULTS
 
- - X acc:      2.66124e-10 [m/s^2].
+ - X acc:      -1.17801e-10 [m/s^2].
  - Y acc:      0 [m/s^2].
  - Z acc:      9.81 [m/s^2].
  - P-DOT:      0 [rad/s^2].
  - Q-DOT:      0 [rad/s^2].
  - R-DOT:      0 [rad/s^2].
 
- - Alpha:      3.82142 [deg].
+ - Alpha:      3.82148 [deg].
  - Sideslip:   0 [deg].
  - Roll rate:  0 [-] (p*BREF/(2VREF)).
  - Pitch rate: 0 [-] (q*CREF/(2VREF)).
  - Yaw rate:   0 [-] (r*BREF/(2VREF)).
  - Control aileronr:   0 [deg].
- - Control elev1r:   5.62642 [deg].
+ - Control elev1r:   5.62564 [deg].
  - Control rudder1:   30 [deg].
 
  Reference intercepts
 
- - Cy0: 5.19779e-09.
+ - Cy0: 5.18233e-09.
  - Cz0: 0.564834.
- - Cl0: -2.19134e-09.
+ - Cl0: -2.20622e-09.
  - Cm0: 0.837046.
- - Cn0: 2.0886e-09.
+ - Cn0: 2.08337e-09.
 
  Reference hinge intercepts
 
@@ -167,8 +167,8 @@ rudder1
 STABILITY
 
  NAME                                     RIGID
- Center of gravity            XG/CREF    11.97177            
+ Center of gravity            XG/CREF    11.97168            
  Neutral point at fixed stick XN/CREF    9.93788             
  Control point at fixed stick XC/CREF    21.54958            
- Static margin          (XN-XCG)/CREF    -2.03389            
- Static margin index (XN-XCG)/(XC-XN)    -0.17516            
+ Static margin          (XN-XCG)/CREF    -2.03380            
+ Static margin index (XN-XCG)/(XC-XN)    -0.17515            

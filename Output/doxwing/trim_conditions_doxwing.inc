@@ -1,30 +1,3 @@
-$
-$ SPEEDS (EAS):
-$ - Maneuvering          VA:  119.526 [m/s].
-$ - Rough air            VB:  96.4563 [m/s].
-$ - Design cruise        VC:  231.301 [m/s].
-$ - Design dive          VD:  289.126 [m/s].
-$ - Stall clean conf.    VS:  75.5947 [m/s].
-$ - Stall landing conf. VFLAND: 55.5689 [m/s].
-$      Percentage MTOW used (equals MLW): 84.615%
-$ - Flap design          VF:  109.179 [m/s].
-$
-$ MACH:
-$ - Design cruise MMO:  0.78.
-$ - Design dive    MD:  0.89.
-$
-$ LOAD FACTORS:
-$ - Max nz: 2.5.
-$ - Min nz: -1.
-$
-$ REFERENCE DATA used:
-$ - Reference surface: 122.4 [m^2]
-$ - Reference chord: 3.60927 [m]
-$ - Reference span: 33.9127 [m]
-$ - Max ceiling altitude: 10668 [m]
-$ - User-defined reference surface for CLMAX, CLMAXLAND, CLALPHAD: 122.4 [m^2]
-$
-$
 $ ============================== Pull-up ===============================
 TRIM=   1
 $ Max EAS at sea level
