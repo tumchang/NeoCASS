@@ -329,7 +329,7 @@ $-------2-------3-------4-------5-------6-------7-------8-------9-------10
 $ GUESS/SMARTCAD trim interface automatically included by GUESS
 $-------2-------3-------4-------5-------6-------7-------8-------9-------10
 $
-INCLUDE D:\TUM\PHD\NeoCASS\Output\doxwing\trim_conditions_simple.inc
+INCLUDE D:\TUM\PHD\NeoCASS\Output\doxwing\trim_conditions_doxwing.inc
 $
 
 $ Uncomment the following lines to run solve_vlm_rigid and get aero data

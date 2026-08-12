@@ -796,7 +796,7 @@
         <tmg idx="1" size="1 1" type="double">0.0001397</tmg>
       </fus>
       <vtail idx="1" size="1 1" type="struct">
-        <tmgw idx="1" size="1 1" type="double">5.08e-05</tmgw>
+        <tmgw idx="1" size="1 1" type="double">0.000508</tmgw>
       </vtail>
       <htail idx="1" size="1 1" type="struct">
         <tmgw idx="1" size="1 1" type="double">0.000508</tmgw>
@@ -808,7 +808,7 @@
         <cf idx="1" size="1 1" type="double">6.25e-05</cf>
       </wing2>
       <canard idx="1" size="1 1" type="struct">
-        <tmgw idx="1" size="1 1" type="double">5.08e-05</tmgw>
+        <tmgw idx="1" size="1 1" type="double">0.000508</tmgw>
       </canard>
     </material_property>
     <loading idx="1" size="1 1" type="struct">

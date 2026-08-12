@@ -42,7 +42,7 @@ MASTER CONTROLS
 
 RIGID TRIM RESULTS
 
- - X acc:      -4.9603e-11 [m/s^2].
+ - X acc:      -9.51044e-11 [m/s^2].
  - Y acc:      0 [m/s^2].
  - Z acc:      9.81 [m/s^2].
  - P-DOT:      0 [rad/s^2].
@@ -60,11 +60,11 @@ RIGID TRIM RESULTS
 
  Reference intercepts
 
- - Cy0: 5.18233e-09.
+ - Cy0: 5.16256e-09.
  - Cz0: 0.564834.
- - Cl0: -2.20622e-09.
+ - Cl0: -2.06539e-09.
  - Cm0: 0.837046.
- - Cn0: 2.08337e-09.
+ - Cn0: 2.08424e-09.
 
  Reference hinge intercepts
 

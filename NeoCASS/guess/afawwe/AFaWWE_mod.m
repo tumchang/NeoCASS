@@ -213,7 +213,7 @@ function [pdcylin, geo, loads, str, aircraft, optim] = AFaWWE_mod(fid, niter, pd
         f_vtp = f_vtp * ((target_wv / wv)^alpha);
         f_htp = f_htp * ((target_wh / wh)^alpha);
         f_fuse = f_fuse * ((target_wf / wf)^alpha);
-        f_vtp = 1.2;
+        f_vtp = 1.0;
         % f_can = 1.0;
         % f_htp = 1.0;
 
