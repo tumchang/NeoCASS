@@ -78,9 +78,6 @@ str.htail.J  = [];   % Torsional constant                      [m4], vector
 str.htail.K1 = [];   % Area factor for shear                   [??], vector
 str.htail.K2 = [];   % Area factor for shear                   [??], vector
 
-load('his_table.mat', 'his_table');
-geo.htail.tbs = geo.htail.tbs .* his_table.f_htp_his(end);
-
 if pdcylin.htail.kcon <= 6
     % Number of webs
     nwebs = str.htail.nrW;
