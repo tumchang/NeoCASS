@@ -904,8 +904,8 @@ for i = 1:length(stick.link.extra)
                     cont = cont +1;
                     stick.link.RBE2(cont).slave = stick.ID.canr(end);
                     stick.link_thick.RBE2(cont).slave = stick.ID.canr_thick(end);
-                    stick.link.RBE2(cont).DOF = '123';
-                    stick.link_thick.RBE2(cont).DOF = '123';
+                    stick.link.RBE2(cont).DOF = '123456';
+                    stick.link_thick.RBE2(cont).DOF = '123456';
                     %         find nearest point
                     [ind, ~] = find_nearest_master(stick.nodes.canrC2(:,end), stick.nodes.winrC2);
                     Ma(cont) = stick.ID.winr(ind);
@@ -921,8 +921,8 @@ for i = 1:length(stick.link.extra)
                     cont = cont +1;
                     stick.link.RBE2(cont).slave = stick.ID.canl(end);
                     stick.link_thick.RBE2(cont).slave = stick.ID.canl_thick(end);
-                    stick.link.RBE2(cont).DOF = '123';
-                    stick.link_thick.RBE2(cont).DOF = '123';
+                    stick.link.RBE2(cont).DOF = '123456';
+                    stick.link_thick.RBE2(cont).DOF = '123456';
                     %         find nearest point
                     [ind,~] = find_nearest_master(stick.nodes.canlC2(:,end), stick.nodes.winlC2);
                     Ma(cont) = stick.ID.winl(ind);

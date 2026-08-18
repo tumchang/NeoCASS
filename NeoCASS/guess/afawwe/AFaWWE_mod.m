@@ -87,7 +87,7 @@ function [pdcylin, geo, loads, str, aircraft, optim] = AFaWWE_mod(fid, niter, pd
     error_total = 1;
 
     alpha = 1.5;  % Iteration relaxation factor
-    max_iter = 20;
+    max_iter = 15;
     iter = 0;
 
     wc_his = [];
@@ -213,9 +213,7 @@ function [pdcylin, geo, loads, str, aircraft, optim] = AFaWWE_mod(fid, niter, pd
         f_vtp = f_vtp * ((target_wv / wv)^alpha);
         f_htp = f_htp * ((target_wh / wh)^alpha);
         f_fuse = f_fuse * ((target_wf / wf)^alpha);
-        f_vtp = 1.0;
         % f_can = 1.0;
-        % f_htp = 1.0;
 
         % calibration factor history
         f_can_his = [f_can_his; f_can];

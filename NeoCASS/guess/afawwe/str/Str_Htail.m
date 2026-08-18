@@ -106,8 +106,6 @@ if pdcylin.htail.kcon <= 6
     str.htail.tW        = [];    % maximum web thickness                         [m] , vector
     str.htail.nrW       = [];    % number of webs
 
-    geo.htail.tbs = geo.htail.tbs .* f_htp;
-
     % Optimal frame spacing
     str.htail.dW = tbs .*( (1-2*geo.htail.ec)/((1-geo.htail.ec)*sqrt(2*geo.htail.epw)) .*...
         (abs(loads.htail.M)./(Zs.*tbs.^2*pdcylin.htail.esw)) .^...
@@ -144,6 +142,9 @@ if pdcylin.htail.kcon <= 6
     J1   = abs(loads.htail.M)./(smax.*tbs);
     str.htail.tbC = J1 - Jw;
     str.htail.tC  = max( [str.htail.tCbar'; str.htail.tgC'; str.htail.tbC'] )';
+
+    str.htail.tC = str.htail.tC .* f_htp;
+    str.htail.tW = str.htail.tW .* f_htp;
     
     % Section areas (BAR number + 1) [m2]
     Aw = str.htail.nrW.*tbs.*str.htail.tW;       % Web area

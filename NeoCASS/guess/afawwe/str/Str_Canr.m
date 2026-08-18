@@ -86,11 +86,11 @@ else
   Zs  = geo.canard.Zs;
   tbs = geo.canard.tbs;
 end
-tbs = tbs .* f_can;
 
 index = geo.canard.index(2:end)-(geo.canard.index(2)-1);
 Nsec = length(loads.canard.M);
 nct = pdcylin.stick.ncanard_carryth;
+
 % Size following the chosen structural concept
 if pdcylin.canard.kcon <= 6
 
@@ -142,6 +142,9 @@ if pdcylin.canard.kcon <= 6
     str.canard.tC  = max([str.canard.tCbar'; str.canard.tgC'])';
     % str.canard.tC = max([str.canard.tbC'; str.canard.tgC'])';
     % str.canard.tC = max([str.canard.tCbar'; str.canard.tgC'; str.canard.tbC'])';
+
+    str.canard.tC = str.canard.tC .* f_can;
+    str.canard.tW = str.canard.tW .* f_can;
     
     % Section areas (BAR number + 1) [m2]
     Aw = str.canard.nrW.*tbs.*str.canard.tW;       % Web area

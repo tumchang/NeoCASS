@@ -81,14 +81,12 @@ if pdcylin.vtail.kcon <=6
     str.vtail.tW        = [];    % maximum web thickness                         [m] , vector
     str.vtail.nrW       = [];    % number of webs
 
-    geo.vtail.tbs = geo.vtail.tbs .* f_vtp;
-
     % Optimal frame spacing
     str.vtail.dW = geo.vtail.tbs .*( (1-2*geo.vtail.ec)/((1-geo.vtail.ec)*sqrt(2*geo.vtail.epw)) .*...
         (abs(loads.vtail.M)./(geo.vtail.Zs.*geo.vtail.tbs.^2*pdcylin.vtail.esw)) .^...
         ((2*geo.vtail.ec-3)/(2*geo.vtail.ec)) *...
         geo.vtail.epc ^(3/(2*geo.vtail.ec)) ).^(2*geo.vtail.ec/(4*geo.vtail.ec-3));
-%   avoid spikes at tip node
+    % avoid spikes at tip node
     str.vtail.dW(end) = str.vtail.dW(end-1);
     % Skin thickness
     Ind  = find(str.vtail.dW ~= 0);
@@ -119,6 +117,9 @@ if pdcylin.vtail.kcon <=6
     J1   = abs(loads.vtail.M)./(smax.*geo.vtail.tbs);
     str.vtail.tbC = J1 - Jw;
     str.vtail.tC  = max( [str.vtail.tCbar'; str.vtail.tgC'; str.vtail.tbC'] )';
+
+    str.vtail.tC = str.vtail.tC .* f_vtp;
+    str.vtail.tW = str.vtail.tW .* f_vtp;
     
     % Section areas (BAR number + 1) [m2]
     Aw = str.vtail.nrW.*geo.vtail.tbs.*str.vtail.tW;       % Web area

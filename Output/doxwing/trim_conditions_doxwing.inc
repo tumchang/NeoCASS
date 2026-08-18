@@ -8,7 +8,7 @@ TRIM    1       1       0.380   0.0     SIDES   0.0     ROLL    0.0
         rudder1 0       
 TRIM=   2
 $ Max EAS corner point
-TRIM    2       1       0.55    6806    SIDES   0.0     ROLL    0.0     
+TRIM    2       1       0.55    5900    SIDES   0.0     ROLL    0.0     
         PITCH   0.0     YAW     0.0     URDD2   0.0     THRUST  0.0     
         URDD4   0.0     URDD5   0.0     URDD6   0.0     CLIMB   0.0     
         BANK    0.0     HEAD    0.0     URDD3   24.525  aileronr0       
@@ -22,7 +22,7 @@ TRIM    3       1       0.274   0.0     SIDES   0.0     ROLL    0.0
         rudder1 0       
 TRIM=   4
 $ Cruise Max Mach
-TRIM    4       1       0.55    11887   SIDES   0.0     ROLL    0.0     
+TRIM    4       1       0.55    7620    SIDES   0.0     ROLL    0.0     
         PITCH   0.0     YAW     0.0     URDD2   0.0     THRUST  0.0     
         URDD4   0.0     URDD5   0.0     URDD6   0.0     CLIMB   0.0     
         BANK    0.0     HEAD    0.0     URDD3   24.525  aileronr0       
@@ -37,7 +37,7 @@ TRIM    5       1       0.380   0.0     SIDES   0.0     ROLL    0.0
         rudder1 0       
 TRIM=   6
 $ Max EAS corner point
-TRIM    6       1       0.55    6806    SIDES   0.0     ROLL    0.0     
+TRIM    6       1       0.55    5900    SIDES   0.0     ROLL    0.0     
         PITCH   0.0     YAW     0.0     URDD2   0.0     THRUST  0.0     
         URDD4   0.0     URDD5   0.0     URDD6   0.0     CLIMB   0.0     
         BANK    0.0     HEAD    0.0     URDD3   -9.81   aileronr0       
@@ -51,7 +51,7 @@ TRIM    7       1       0.274   0.0     SIDES   0.0     ROLL    0.0
         rudder1 0       
 TRIM=   8
 $ Cruise Max Mach
-TRIM    8       1       0.55    11887   SIDES   0.0     ROLL    0.0     
+TRIM    8       1       0.55    7620    SIDES   0.0     ROLL    0.0     
         PITCH   0.0     YAW     0.0     URDD2   0.0     THRUST  0.0     
         URDD4   0.0     URDD5   0.0     URDD6   0.0     CLIMB   0.0     
         BANK    0.0     HEAD    0.0     URDD3   -9.81   aileronr0       
