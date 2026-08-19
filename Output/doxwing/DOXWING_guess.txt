@@ -7,34 +7,34 @@
 	
 	------------- Semi-wingbox [Kg] ---------------------
 	
-	Bending material mass  308.89
-	Shear material mass     51.77
-	Torsion material mass    236.68
-	Predicted wingbox mass 360.66
-	Actual wingbox mass    360.66
+	Bending material mass  308.88
+	Shear material mass     51.08
+	Torsion material mass    235.99
+	Predicted wingbox mass 359.96
+	Actual wingbox mass    359.96
 	
 	------------- Wing Carrythrough [Kg] ----------------
 	
 	Bending material mass   230.37
-	Shear material mass      15.78
+	Shear material mass      15.77
 	Torsion material mass   140.62
 	CarryThrough mass       246.15
 	Final CarryThrough mass 330.87
 	
 	------------- Wing [Kg] -----------------------------
 	
-	Ideal structural mass         721.31
-	Structural mass               709.99
-	Primary structure mass        969.59
-	Total structure mass          1253.07
-	Total structure including CT  1583.94
+	Ideal structural mass         719.92
+	Structural mass               708.62
+	Primary structure mass        967.72
+	Total structure mass          1250.65
+	Total structure including CT  1581.52
 	
 	------------- Canard [Kg] ---------------------------
 	
-	Ideal structural mass             1200.68
-	Structural mass                   1181.83
-	Primary structure mass            1613.95
-	Total structure mass              2085.82
+	Ideal structural mass             1200.98
+	Structural mass                   1182.13
+	Primary structure mass            1614.36
+	Total structure mass              2086.35
 	Total structure mass including CT 2199.99
 	
 	------------- Vertical tail [Kg] --------------------
@@ -56,7 +56,7 @@
 	------------- Item Masses [Kg] ---------------------
 	
 	Fuselage                           2760.70
-	Wing                               1583.94
+	Wing                               1581.52
 	Horizontal tail                    122.56
 	Vertical tail                      181.47
 	Canard                             2199.99
@@ -98,9 +98,9 @@
 
 	------------- Aircraft Weights [Kg] -----------------
 	
-	Operative Empty Weight  (OEW)  14980.07
-	Max Zero Fuel Weight    (MZFW) 22180.07
-	Maximum Take Off Weight (MTOW) 22180.07
+	Operative Empty Weight  (OEW)  14983.46
+	Max Zero Fuel Weight    (MZFW) 22183.46
+	Maximum Take Off Weight (MTOW) 22183.46
 	
 	------------- Aircraft Balance [m] from nose --------
 	
@@ -115,6 +115,6 @@
 	
 	------------- Aircraft Balance wrt MAC --------------
 	
-	Longitudinal Operative Empty Weight  CG at MAC -27.59%
-	Longitudinal Max Zero Fuel Weight    CG at MAC -20.35%
-	Longitudinal Maximum Take Off Weight CG at MAC -20.35%
+	Longitudinal Operative Empty Weight  CG at MAC -27.60%
+	Longitudinal Max Zero Fuel Weight    CG at MAC -20.36%
+	Longitudinal Maximum Take Off Weight CG at MAC -20.36%

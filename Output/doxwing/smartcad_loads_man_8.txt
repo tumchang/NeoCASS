@@ -1,10 +1,10 @@
 
 FLIGHT CONDITION
 
- Speed:    162.305 [m/s].
+ Speed:    170.335 [m/s].
  Mach:     0.55 [-].
- Density:  0.316418 [kg/m^3].
- Altitude: 11887 [m].
+ Density:  0.548923 [kg/m^3].
+ Altitude: 7620 [m].
 
 ATTITUDE
 
@@ -42,33 +42,33 @@ MASTER CONTROLS
 
 RIGID TRIM RESULTS
 
- - X acc:      3.07737e-11 [m/s^2].
+ - X acc:      -2.23718e-11 [m/s^2].
  - Y acc:      0 [m/s^2].
  - Z acc:      -9.81 [m/s^2].
  - P-DOT:      0 [rad/s^2].
  - Q-DOT:      0 [rad/s^2].
  - R-DOT:      0 [rad/s^2].
 
- - Alpha:      -9.14011 [deg].
+ - Alpha:      -5.29275 [deg].
  - Sideslip:   0 [deg].
  - Roll rate:  0 [-] (p*BREF/(2VREF)).
  - Pitch rate: 0 [-] (q*CREF/(2VREF)).
  - Yaw rate:   0 [-] (r*BREF/(2VREF)).
  - Control aileronr:   0 [deg].
- - Control elev1r:   2.07015 [deg].
+ - Control elev1r:   1.78552 [deg].
  - Control rudder1:   0 [deg].
 
  Reference intercepts
 
- - Cy0: 4.0004e-09.
+ - Cy0: 3.99779e-09.
  - Cz0: 0.271631.
- - Cl0: -1.63403e-09.
+ - Cl0: -1.63924e-09.
  - Cm0: 0.306444.
- - Cn0: 1.69755e-09.
+ - Cn0: 1.69808e-09.
 
  Reference hinge intercepts
 
- - aileronr: -5.28845e-15.
+ - aileronr: -5.28844e-15.
  - elev1r: 0.000115941.
  - rudder1: 1.55667e-10.
 
@@ -98,16 +98,16 @@ ROLL RATE
  Cy/p                0.25269             
  Cz/p                0.00002             
  Cl/p                -1.38302            
- Cm/p                0.00024             
+ Cm/p                0.00023             
  Cn/p                0.06696             
 
 PITCH RATE
 
  NAME                RIGID               
  Cy/q                -0.00001            
- Cz/q                26.27517            
+ Cz/q                26.27610            
  Cl/q                0.00001             
- Cm/q                -359.18827          
+ Cm/q                -359.19829          
  Cn/q                -0.00001            
 
 YAW RATE
@@ -116,7 +116,7 @@ YAW RATE
  Cy/r                -1.17108            
  Cz/r                -0.00006            
  Cl/r                0.24175             
- Cm/r                0.00121             
+ Cm/r                0.00115             
  Cn/r                -0.46933            
 
 aileronr
@@ -145,7 +145,7 @@ elev1r
  Ch/alpha            -0.01383            
  Ch/beta             0.00001             
  Ch/p                0.00000             
- Ch/q                -0.42137            
+ Ch/q                -0.42138            
  Ch/r                0.00000             
  Ch/Delta            -0.04204            
 
@@ -167,8 +167,8 @@ rudder1
 STABILITY
 
  NAME                                     RIGID
- Center of gravity            XG/CREF    11.67255            
+ Center of gravity            XG/CREF    11.69886            
  Neutral point at fixed stick XN/CREF    10.07212            
  Control point at fixed stick XC/CREF    21.56189            
- Static margin          (XN-XCG)/CREF    -1.60043            
- Static margin index (XN-XCG)/(XC-XN)    -0.13929            
+ Static margin          (XN-XCG)/CREF    -1.62674            
+ Static margin index (XN-XCG)/(XC-XN)    -0.14158            
