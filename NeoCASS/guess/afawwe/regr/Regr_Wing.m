@@ -54,7 +54,7 @@
 %     DATE        VERS    PROGRAMMER       DESCRIPTION
 %     080722      1.0     A. Da Ronch      Creation
 %*******************************************************************************
-function [str] = Regr_Wing(fid, pdcylin, aircraft, geo, loads, str)
+function [str, ww] = Regr_Wing(fid, pdcylin, aircraft, geo, loads, str)
 
 %--------------------------------------------------------------------------------------------------
 % Initialize structure:

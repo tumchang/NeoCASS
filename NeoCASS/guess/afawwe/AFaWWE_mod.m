@@ -70,7 +70,7 @@ function [pdcylin, geo, loads, str, aircraft, optim] = AFaWWE_mod(fid, niter, pd
         end
 
     %==========================================================================
-    % Thickness iteration loop (varying tbs)
+    % Thickness iteration loop
     % Changes made by: BHL
     %==========================================================================
     
@@ -78,11 +78,13 @@ function [pdcylin, geo, loads, str, aircraft, optim] = AFaWWE_mod(fid, niter, pd
     target_wv = aircraft.weight_balance.COG(4,4,1);
     target_wf = aircraft.weight_balance.COG(5,4,1);
     target_wh = aircraft.weight_balance.COG(3,4,1);
+    target_ww = aircraft.weight_balance.COG(1,4,1);
 
     f_can = 1;
     f_vtp = 1;
     f_fuse = 1;
     f_htp = 1;
+    f_wing = 1;
 
     error_total = 1;
 
@@ -190,7 +192,7 @@ function [pdcylin, geo, loads, str, aircraft, optim] = AFaWWE_mod(fid, niter, pd
         % Structure and Regresstion Analysis
         %==========================================================================
 
-        [str, optim, wc, wf, wv, wh] = str_reg_module(fid, niter, pdcylin,aircraft, geo, loads, str, optim, f_can, f_vtp, f_fuse, f_htp);
+        [str, optim, wc, wf, wv, wh, ww] = str_reg_module(fid, niter, pdcylin,aircraft, geo, loads, str, optim, f_can, f_vtp, f_fuse, f_htp, f_wing);
 
         if ~fix_mass
             break;
@@ -213,6 +215,7 @@ function [pdcylin, geo, loads, str, aircraft, optim] = AFaWWE_mod(fid, niter, pd
         f_vtp = f_vtp * ((target_wv / wv)^alpha);
         f_htp = f_htp * ((target_wh / wh)^alpha);
         f_fuse = f_fuse * ((target_wf / wf)^alpha);
+        f_wing = f_wing * ((target_ww / ww)^alpha);
         % f_can = 1.0;
 
         % calibration factor history

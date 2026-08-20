@@ -272,7 +272,13 @@ else
             outps = 'bk_optim_Zst_sk_panel_c.mat';
             [str.canard.skin, str.canard.web] = run_optim_Zst_sk_panel_9(niter, optim.canard.skin, optim.canard.web, Zs, tbs, pdcylin.canard.esw, pdcylin.canard.msl, loads.canard.N,...
                                               loads.canard.FS, loads.canard.M, loads.canard.Mt, pdcylin.canard.rpitch, pdcylin.canard.spitch, outps);
-%
+
+            str.canard.web.tw = str.canard.skin.tskin;
+
+            str.canard.skin.tskin = str.canard.skin.tskin * f_can;
+            str.canard.skin.Astr = str.canard.skin.Astr * f_can;
+            str.canard.web.tw = str.canard.web.tw * f_can;
+
             optim.canard.skin.tskin(:,niter) =  str.canard.skin.tskin;
             optim.canard.skin.Astr(:,niter)  =  str.canard.skin.Astr;     
             optim.canard.web.tw(:,niter)     =  str.canard.web.tw;       

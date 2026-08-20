@@ -59,7 +59,7 @@
 %     DATE        VERS    PROGRAMMER       DESCRIPTION
 %     080404      1.0     A. Da Ronch      Creation
 %*******************************************************************************
-function [str, optim] = Str_Wing(niter, pdcylin, aircraft, geo, loads, str, optim)
+function [str, optim] = Str_Wing(niter, pdcylin, aircraft, geo, loads, str, optim, f_wing)
 
 %--------------------------------------------------------------------------
 % Initialize structure
@@ -142,7 +142,10 @@ if pdcylin.wing.kcon <= 6
     str.wing.tC  = max([str.wing.tCbar'; str.wing.tgC'])';
     % str.wing.tC = max([str.wing.tbC'; str.wing.tgC'])';
     % str.wing.tC = max([str.wing.tCbar'; str.wing.tgC'; str.wing.tbC'])';
-    
+
+    str.wing.tC = str.wing.tC .* f_wing;
+    str.wing.tW = str.wing.tW .* f_wing;
+
     % Section areas (BAR number + 1) [m2]
     Aw = str.wing.nrW.*tbs.*str.wing.tW;       % Web area
     Ac = 2.*(Zs + tbs).*str.wing.tC;  % Cover area
@@ -231,7 +234,13 @@ else
             outps = 'bk_optim_Zst_sk_panel_w.mat';
             [str.wing.skin, str.wing.web] = run_optim_Zst_sk_panel_9(niter, optim.wing.skin, optim.wing.web, Zs, tbs, pdcylin.wing.esw, pdcylin.wing.msl, loads.wing.N,...
                                               loads.wing.FS, loads.wing.M, loads.wing.Mt, pdcylin.wing.rpitch, pdcylin.wing.spitch, outps);
-%
+            
+            str.wing.web.tw = str.wing.skin.tskin;
+
+            str.wing.skin.tskin = str.wing.skin.tskin * f_wing;
+            str.wing.skin.Astr = str.wing.skin.Astr * f_wing;
+            str.wing.web.tw = str.wing.web.tw * f_wing;
+
             optim.wing.skin.tskin(:,niter) =  str.wing.skin.tskin;
             optim.wing.skin.Astr(:,niter)  =  str.wing.skin.Astr;     
             optim.wing.web.tw(:,niter)     =  str.wing.web.tw;       
